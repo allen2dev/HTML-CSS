@@ -8,7 +8,7 @@ HTML CSS JavaScript 是运行在web上的语言，它们关系密切，被设计
 
 将HTML视为网页后面的抽象文本和图像，CSS作为实际显示的页面，JavaScript作为可以处理HTML和CSS的行为。
 
-![Image](/images/introduction/1.png)
+![Image](../images/introduction/1.png)
 
 例如，你可以使用此HTML将某些特定的文本标记为段落：
 
@@ -47,7 +47,7 @@ p.addEventListener('click', function(event) {
 
 处理这些复杂性涉及设置各种“环境”来组织文件和处理您的网站的构建/部署。所有这些都与构成网站的实际HTML，CSS和JavaScript代码打交道。本教程完全专注于HTML和CSS的语言，而不是设置这些底层环境。
 
-![Image](/images/introduction/2.png)
+![Image](../images/introduction/2.png)
 
 获得流畅的HTML和CSS是迈向成为真正的Web开发人员的重要的第一步。我们只是不想让你离开这个教程，认为你将能够自己启动一个完整的网站。然而，你将有技能重新创建互联网上的绝大多数网页。
 
@@ -57,7 +57,7 @@ p.addEventListener('click', function(event) {
 
 在很多方面，这正是Web开发人员做的，除了不是排列可移动类型，他们写HTML和CSS。我们关心的是同样的任务：传达有意义的内容。我们甚至处理他们所做的相同的表示问题，例如选择要使用的字体，设置标题的大小，以及确定文本行之间的间隔。
 
-![Image](/images/introduction/3.png)
+![Image](../images/introduction/3.png)
 
 打印机用于打印一堆页面并将其绑定到一本书中。现在，我们创建了一堆HTML文件，并将它们链接到一个网站。学习HTML和CSS是理解可用的HTML标记和CSS规则的一个问题，使浏览器准确地呈现这些文件是如何应该的。
 
@@ -79,7 +79,7 @@ p.addEventListener('click', function(event) {
 
 对于本教程，一个优秀的文本编辑器和Web浏览器是必要的。您的基本工作流程是在文本编辑器中编写代码，然后在Web浏览器中打开它以查看它的外观。当你开始创建自己的网站，你最终会添加更多的工具到你的工具箱，但重要的是从零开始，彻底学习HTML和CSS的基础。
 
-![Image](/images/introduction/4.png)
+![Image](../images/introduction/4.png)
 
 也就是说，花时间来真正地使用你的文本编辑器。优秀的功能可以让你比正常情况更快地编写代码，比如自动完成标签，跳过文本和浏览文件系统。充分利用您的文本编辑器是学习HTML和CSS的工艺部分。
 
@@ -91,7 +91,7 @@ p.addEventListener('click', function(event) {
 
 如果你还没有Atom，现在就下载它，因为下一章将需要它。下载后，打开它，以便我们可以简要地浏览其主要功能。你应该看到两个窗格有不同的欢迎屏幕：
 
-![Image](/images/introduction/5.png)
+![Image](../images/introduction/5.png)
 
 我们不需要任何一个欢迎屏幕，因此通过单击相应选项卡中的x图标关闭它们。您也可以使用Cmd + W（Mac）或Ctrl + W（Windows / Linux）快捷方式来关闭它们（快捷方式非常棒，只要可以使用它们）。您应该留下一个单一的未命名选项卡。
 
@@ -99,7 +99,7 @@ p.addEventListener('click', function(event) {
 
 你在Atom中工作的每个网站都是一个“项目”，它本质上只是一个文件系统上的文件夹，包含一堆HTML和CSS文件。让我们通过创建一个假项目并添加一些文本文件来探索Atom。单击菜单栏中的文件>打开以打开文件对话框窗口，然后选择新建文件夹以创建新文件夹。调用它hello-atom，然后单击打开。
 
-![Image](/images/introduction/6.png)
+![Image](../images/introduction/6.png)
 
 您现在应该在界面左侧看到一个侧边栏，在顶部的hello-atom旁边显示一个小文件夹图标。这是我们的文件浏览器。当然，它不会显示任何东西，直到我们添加一些文件，所以让我们做下一步。
 
@@ -113,11 +113,11 @@ p.addEventListener('click', function(event) {
 
 同样，正确的文本编辑器最重要的方面之一是让您高效地浏览项目中的所有文件。在Atom中，您可以选择要处理的文件的选项卡，或者在界面左侧的文件浏览器中找到它。您还可以使用Ctrl + Tab在打开的选项卡之间切换。
 
-![Image](/images/introduction/7.png)
+![Image](../images/introduction/7.png)
 
 浏览的都是正常文件，但有些时候，当你搜索一个特定的文件。例如，假设您在进行某些质量保证时发现网站上存在损坏的链接。您希望能够使用Atom跳转到该文件，以尽快修复链接。
 
-![Image](/images/introduction/8.png)
+![Image](../images/introduction/8.png)
 
 为此，你需要Atom的模糊查找器，可以通过Cmd + T（Mac）或Ctrl + T（Windows，Linux）访问。当你按下这个，Atom会打开一个搜索栏，让你输入任何部分的文件名你正在寻找。尝试关闭两个选项卡，击中Cmd + T或Ctrl + T，并输入“一个”。 page-one.html文件应该会弹出，您可以按Enter键进行编辑。这个功能是必不可少的一旦你的项目增长到几十个文件分布在几个文件夹。
 
@@ -125,7 +125,7 @@ p.addEventListener('click', function(event) {
 
 Atom不仅允许您拥有多个选项卡，还可以拥有多个窗格。要查看我们正在谈论的内容，请尝试右键单击文件浏览器中的某个文件，然后选择“Split Right”。这将在新窗格中打开该文件，允许您同时查看多个文件。
 
-![Image](/images/introduction/9.png)
+![Image](../images/introduction/9.png)
 多个窗格对于同时检查CSS文件及其相关的HTML文件非常有用。
 
 ### Atom外部
@@ -133,10 +133,14 @@ Atom不仅允许您拥有多个选项卡，还可以拥有多个窗格。要查�
 
 从这里，您可以在网络浏览器中添加新文件，创建文件夹或打开HTML文件。最后一个将成为本教程其余部分的常见任务，所以让我们使用我们的page-one.html文件进行拍摄。在系统的默认文件浏览器中右键单击它，然后选择打开方式> Chrome / Firefox / Safari。您应该看到添加到在默认Web浏览器中呈现为网页的文件中的任何文本。
 
-![Image](/images/introduction/10.png)
+![Image](../images/introduction/10.png)
 
 现在，您可以在Atom中编辑page-one.html的内容，保存它，然后按Cmd + R（Mac）或Ctrl + R（Windows，Linux）将其重新加载到Web浏览器中。这是基本的编辑工作流程 对于所有的web开发人员，你会变得非常，非常习惯，当你完成了接下来的13章。
 
 ### 总结
 
 恭喜！您已经完成了迈向成为专业网络开发人员的第一步。希望，本章给你一个基本的了解适合更广泛的行业的Web开发和HTML和CSS背后的思想。
+
+我们刚刚介绍的Atom东西将成为我们日常生活的一部分，所以在继续之前，确保你对一切都很舒服。我们鼓励你使用示例项目，添加更多的文件和练习从一个到另一个。掌握编写HTML和CSS的工艺是什么让惊人的生产力开发人员与平均。
+
+现在我们有了一个合适的文本编辑器，我们准备开始编码一些真正的网页。我们将从接下来的两章开始探索最常见的HTML元素，然后我们将添加一些CSS到混合。
