@@ -2,7 +2,7 @@
 
 本项目是对自我知识的总结与回顾，也可以作为初学者的学习完整Web开发的基础教程。
 
-### 介绍
+### [介绍](pages/introduction.md)
 
 HTML、CSS、JavaScript 的本质，语言与框架之间的区别。
 
