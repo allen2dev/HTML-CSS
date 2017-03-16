@@ -46,30 +46,6 @@ CSS 中的 Static、relative、absolute、fixed 定位，下拉菜单和 z-index
 
 响应设计的重点部分​​：视网膜屏幕，流体图像，使用srcset的设备优化，使用<picture>元素
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/zhiqiuyao/HTML-CSS/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+如果大家发现教程中出现了错误，还望不吝赐教，提交到issue；如果你觉得对有你什么帮助，希望star一下本项目，谢谢大家。

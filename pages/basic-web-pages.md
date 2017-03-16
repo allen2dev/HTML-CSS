@@ -214,11 +214,138 @@ phrase.</p>
 ```
 
 包含在<em>标签中的部分应以斜体显示，如下所示。注意线的一部分是如何受到影响的，这是内联元素的特征。在[CSS盒子模型]一章中，我们将了解内联和块元素如何对页面布局产生巨大影响。
+
 ![Image](../images/basic-web-pages/11.png)
+
+为了防止它还没有沉没，真正重要的是你正确嵌套你的HTML元素。当您使用多个内联元素时，更容易混淆标记的顺序，因此请务必仔细检查您的标记是否如下所示：
+
+```html
+<!-- (Again, don't ever do this) -->
+<p>This is some <em>emphasized text</p></em>
+```
+
+### strong (bold) 元素
+
+如果您想要比<em>标签更强调，您可以使用<strong>。它是一个内联元素，就像<em>，看起来像这样：
+
+```html
+<p>Other times you need to <strong>strong</strong>ly emphasize the importance
+of a word or phrase.</p>
+```
+
+它应该以粗体文本呈现，如下所示：
+
 ![Image](../images/basic-web-pages/12.png)
+
+为了更多地关注你的一段文本，你可以在<em>元素中嵌入<strong>元素（反之亦然）。这将给你强烈和强调的文本：
+
+```html
+<p><em><strong>And sometimes you need to shout!</strong></em></p>
+```
+
+正如文本所示，这实际上是排版的等同排版。有一个阅读通过[Web排版]()一章前变得太疯狂与粗体和斜体字体。
+
 ![Image](../images/basic-web-pages/13.png)
+
+### 结构与呈现
+
+你可能会想知道为什么我们使用“strong”和“emphasis”而不是“italic”和“粗bold”。这使我们在HTML和CSS之间有一个重要的区别。 HTML标记应该提供关于您的语义信息 内容 - 不呈现信息。换句话说，HTML应该定义文档的结构，将其外观留给CSS。
+
 ![Image](../images/basic-web-pages/14.png)
+
+过时的<b>和<i>元素是这种情况的典型示例。他们曾经分别代表“bold”和“italic”，但HTML5试图在文档的结构和其表示之间创建明确的分离。因此，用<em>替换<i>，因为除了斜体（例如，以不同的字体，不同的颜色或更大的尺寸）之外，可以以各种方式显示加强的文本。与<b>和<strong>相同。
+
+我们将在[Hello，CSS]()中发现，我们可以改变浏览器的<strong>和<em>元素的默认渲染。这进一步说明了我们不应该将它称为HTML中的斜体或粗体文本，这是CSS的一个决定。
+
+### 空的HTML元素
+
+到目前为止，我们遇到的HTML标签要么封装文本内容（例如，<p>）或其他HTML元素（例如，<ol>）。这不是所有HTML元素的情况。其中一些可以是“空”或“自闭”。换行符和水平线是最常见的空元素。
+
+#### 换行符
+
+HTML将连续的空格，制表符或换行符（统称为“空格”）缩进一个空格。要查看我们正在谈论的内容，请将以下部分添加到我们的basics.html文件中：
+
+```html
+<h2>Empty Elements</h2>
+
+<p>Thanks for reading! Interneting should be getting easier now.</p>
+
+<p>Regards,
+The Authors</p>
+```
+
+在上面的代码段中的Regards之后的换行符将被转换为空格，而不是显示为换行符
+
 ![Image](../images/basic-web-pages/15.png)
+
+这种行为可能看起来很直观，但Web开发人员通常设置其文本编辑器将行长限制为大约80个字符。作为一个程序员，这种方式更容易管理代码，但是每个新行显示在呈现的页面将严重混乱想要的页面布局。
+
+要告诉浏览器我们想要一个换行，我们需要使用一个明确的&lt;br/&gt;元素，如下所示：
+
+```html
+<p>Regards,<br/>
+The Authors</p>
+```
+
+除了文字格式外， Haiku，音乐歌词和签名只是几个例子，它可能会派上用场。
 ![Image](../images/basic-web-pages/16.png)
+
+但是，要非常小心，不要滥用&lt;br/&gt;标签。你使用的每一个都应该传达意义 - 你不应该使用它，说，在段落之间添加一堆空间：
+
+```html
+<!-- (不要这样做) -->
+<p>This paragraph needs some space below it...</p>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+<p>So, I added some hard line breaks.</p>
+```
+如上一节所讨论的，这种表现信息应该在你的CSS而不是你的HTML中定义。
+
+### 水平规则
+
+&lt;hr/&gt;元素是一个“水平规则”，表示专题断点。从一个故事的一个场景到下一个场景或在一个字母和一个后记之间的过渡是当水平规则可能是合适的时候的好例子。例如：
+
+```html
+<h2>Empty Elements</h2>
+
+<p>Thanks for reading! Interneting should be getting easier now.</p>
+
+<p>Regards,<br/>
+The Authors</p>
+
+<hr/>
+
+<p>P.S. This page might look like crap, but we'll fix that with some CSS
+soon.</p>
+```
+
+本章的主题之一是内容（HTML）与演示文稿（CSS）的分离，而&lt;hr /&gt;没有什么不同。像&lt;em&gt;和&lt;strong&gt;，它有一个默认的外观（水平线），但一旦我们开始使用CSS，我们将能够渲染它作为更多的空间之间的部分，装饰口音字符，我们想要的任何东西。
+
 ![Image](../images/basic-web-pages/17.png)
+
+&lt;hr /&gt;,&lt;br/&gt;应该携带的意义，当你只是为了美观显示一行不要使用它们。为此，您将需要使用CSS border属性，我们将在几个章节中讨论。
+
+考虑&lt;hr /&gt;元素的另一种方法是，它比由新标题创建的分隔不太重要 元素，但比新的段落更有意义。
+
+### 可选的尾部斜杠
+
+所有空HTML元素中的尾部斜杠（/）是完全可选的。以上代码段也可以这样标记（注意/在&lt;br&gt;和&lt;hr&gt;标签中缺少）：
+```html
+<p>Regards,<br>
+The Authors</p>
+
+<hr>
+```
+
+加与不加没有绝对正确，但一定要保持一致性。在本教程中，我们将包含尾随/字符，因为它清楚地表明它是一个自我关闭的元素。这将有助于防止您的眼睛在文档中的其他位置搜索结束标记。
+
+### 总结
+
+本章可能看起来像一个无休止的HTML元素列表，而且，它基本上是。 HTML很简单，直到它。网页由HTML元素组成，每个元素为其包含的文本添加不同的含义，元素可以嵌套在彼此之内。
+
+我们在本章中做的是始终是Web开发过程的第一步 - 你需要在定义你想说什么（CSS）之前定义你想说什么（HTML）。希望我们在本章中创建的basics.html文件可以作为核心HTML元素的有用的快速参考。如果你偶然发生错误，它应该是什么样子：
+
 ![Image](../images/basic-web-pages/18.png)
+
+我们讨论了如何编写HTML就像在所见即所得文档编辑器中操作内容一样。 HTML显然是一个更加手动的过程，但是权衡是它令人难以置信的灵活性。您可以将其显示在网页，移动设备，平板电脑或打印的纸张上，每个都有不同的布局。您甚至可以通过更改单行CSS重新设置多个文档的样式。 Microsoft Word没有接近HTML和CSS作为内容媒介的潜力。
+
+在下一章中，我们将使用您每天将遇到的其他元素来完成HTML教育：链接和图像。对于更模糊的元素，我们将让您自己浏览MDN的[HTML元素引用](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)。
