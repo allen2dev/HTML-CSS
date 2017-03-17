@@ -48,4 +48,4 @@ CSS 中的 Static、relative、absolute、fixed 定位，下拉菜单和 z-index
 
 ### Support or Contact
 
-如果大家发现教程中出现了错误，还望不吝赐教，提交到issue；如果你觉得对有你什么帮助，希望star一下本项目，谢谢大家。
+如果大家发现教程中出现了错误，还望不吝赐教，提交到issue；如果觉得文章中的内容对有你什么帮助，希望star一下本项目，谢谢大家。
