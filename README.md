@@ -1,10 +1,10 @@
 ## HTML & CSS 基础知识
 
-本项目是作者对自我知识的总结与回顾，也可以作为初学者学习完整Web开发的基础教程。
+本项目是作者对自我知识的总结与回顾，也可以作为初学者完整学习Web开发的基础教程。
 
 ### [简介](pages/introduction.md)
 
-HTML、CSS、JavaScript 的本质，语言与框架之间的区别。
+简述 HTML、CSS、JavaScript 的本质，语言与框架之间的区别。
 
 ### [基本 Web 页面](pages/basic-web-pages.md)
 
@@ -14,17 +14,17 @@ Internet 上每个网页的骨架，以及基本的 HTML 元素，如标题、�
 
 使用绝对、相对或根相对路径来链接到其他页面，插入图像的方式同样如此
 
-### [你好，css](pages/hello-css.md)
+### [你好，CSS](pages/hello-css.md)
 
 使用样式表，使用各种CSS属性设置HTML元素，选择不同元素，以及在多个网页上重用样式。
 
 ### BOX model 盒子模型
 
-块级盒子、行内盒子、padding、border、margin，如何使用盒子来美化网站
+块级盒子、行内盒子、padding、border、margin，如何使用盒子模型来美化网站
 
 ### CSS 选择器
 
-Class选择器、后代选择器、使用伪类美化链接，为什么避免使用 id 选择器
+Class选择器、后代选择器、使用伪类美化链接，解释为什么避免使用 id 选择器
 
 ### Floats（浮动）
 

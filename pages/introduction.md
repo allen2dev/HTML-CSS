@@ -2,9 +2,9 @@
 
 HTML CSS JavaScript 是运行在web上的语言，它们关系密切，被设计成用来处理不同的任务，了解它们如何进行互动有助于成为一名Web开发人员。简述如下：
 
-1. HTML用于通过标记来为原始内容添加含义
-2. CSS用于美化网页的内容
-3. JavaScript用于使内容互动
+1. HTML 通过标签为原始内容添加含义
+2. CSS 美化网页的内容
+3. JavaScript 使内容互动
 
 将HTML视为网页后面的抽象文本和图像，CSS作为实际显示的页面，JavaScript作为可以处理HTML和CSS的行为。
 
@@ -34,11 +34,12 @@ p.addEventListener('click', function(event) {
 });
 ```
 
-如你所见，HTML，CSS和JavaScript是完全不同的语言，但它们都以某种方式相互引用。大多数网站都依赖这三个网站，但每个网站的外观由HTML和CSS决定。这使得本教程成为你的Web开发历程的一个很好的起点。
+如你所见，HTML，CSS和JavaScript是完全不同的语言，但它们都以某种方式相互引用。大多数网站都依赖这三个网站，但每个网站的外观由HTML和CSS决定。
+这使得本教程成为你的Web开发历程的一个很好的起点。
 
 ### 语言与“web开发”
 
-不幸的是，掌握HTML，CSS和JavaScript只是成为专业Web开发人员的先决条件。这里有一堆其他实用技能来运行一个网站：
+不幸的是，掌握HTML，CSS和JavaScript只是成为专业Web开发人员的先决条件。还有一堆其他实用技能来运行一个网站：
 
 - 将HTML组织为可重用的模板
 - 建立一个web服务器
@@ -46,11 +47,12 @@ p.addEventListener('click', function(event) {
 - 代码或者环境出问题时恢复到以前的版本
 - 在服务器上指定域名
 
-处理这些复杂性涉及设置各种“环境”来组织文件和处理你的网站的构建/部署。所有这些都与构成网站的实际HTML，CSS和JavaScript代码打交道。本教程完全专注于HTML和CSS的语言，而不是设置这些底层环境。
+处理这些复杂性涉及设置各种“环境”来组织文件和处理你的网站的构建/部署。所有这些都与构成网站的实际HTML，CSS和JavaScript代码打交道。
+本教程完全专注于HTML和CSS的语言，而不是设置这些底层环境。
 
 ![Image](../images/introduction/2.png)
 
-获得流畅的HTML和CSS是迈向成为真正的Web开发人员的重要的第一步。我们只是不想让你离开这个教程，认为你将能够自己启动一个完整的网站。然而，你将有技能重新创建互联网上的绝大多数网页。
+别发愁，熟练掌握HTML和CSS是成为Web开发人员的重要的第一步。我们只是不想让你离开这个教程，认为你将能够自己启动一个完整的网站。然而，你将有技能重新创建互联网上的绝大多数网页。
 
 ### Web 出版
 
@@ -120,7 +122,7 @@ p.addEventListener('click', function(event) {
 
 ![Image](../images/introduction/8.png)
 
-为此，你需要Atom的模糊查找器，可以通过Cmd + T（Mac）或Ctrl + T（Windows，Linux）访问。当你按下这个，Atom会打开一个搜索栏，让你输入任何部分的文件名你正在寻找。尝试关闭两个选项卡，击中Cmd + T或Ctrl + T，并输入“一个”。 page-one.html文件应该会弹出，你可以按Enter键进行编辑。这个功能是必不可少的一旦你的项目增长到几十个文件分布在几个文件夹。
+此时需要Atom的模糊查找器，可以通过Cmd + T（Mac）或Ctrl + T（Windows，Linux）访问。当你按下这个，Atom会打开一个搜索栏，让你输入任何部分的文件名你正在寻找。尝试关闭两个选项卡，击中Cmd + T或Ctrl + T，并输入“一个”。 page-one.html文件应该会弹出，你可以按Enter键进行编辑。这个功能是必不可少的一旦你的项目增长到几十个文件分布在几个文件夹。
 
 ### 多窗格
 
